@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>awoak games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,SOFT,wght@9..144,100,400;9..144,100,600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #FFF9EE;
+      --ink:   #2E221A;
+      --muted: #6B5548;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Fraunces', Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .wordmark {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 600;
+      font-variation-settings: 'SOFT' 100;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4em;
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      font-weight: 400;
+      font-variation-settings: 'SOFT' 100;
+      color: var(--muted);
+      margin-bottom: 3rem;
+    }
+
+    .app-card {
+      border: 2px solid var(--ink);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 340px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      margin: 0 auto 1rem;
+      display: block;
+      background: var(--cream);
+      border: 1.5px solid #e0d6c8;
+    }
+
+    .app-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      font-variation-settings: 'SOFT' 100;
+      margin-bottom: 0.3rem;
+    }
+
+    .app-desc {
+      font-size: 0.95rem;
+      font-weight: 400;
+      font-variation-settings: 'SOFT' 100;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 1.4rem;
+    }
+
+    .app-store-btn {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--cream);
+      text-decoration: none;
+      padding: 0.65rem 1.4rem;
+      border-radius: 100px;
+      font-family: 'Fraunces', serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-variation-settings: 'SOFT' 100;
+      transition: opacity 0.15s;
+    }
+
+    .app-store-btn:hover { opacity: 0.75; }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      font-weight: 400;
+      font-variation-settings: 'SOFT' 100;
+      color: var(--muted);
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid #c0b0a0;
+    }
+
+    footer a:hover { color: var(--ink); border-color: var(--ink); }
+  </style>
+</head>
+<body>
+
+  <p class="wordmark">awoak games</p>
+  <p class="tagline">Games for curious minds</p>
+
+  <div class="app-card">
+    <img class="app-icon" src="animal-earth-icon.png" alt="Animal Earth icon">
+    <p class="app-name">Animal Earth</p>
+    <p class="app-desc">Build your dream zoo by answering animal trivia. Discover dozens of creatures and track them in your Zoo Journal.</p>
+    <a class="app-store-btn" href="https://apps.apple.com/app/animal-earth/id0000000000">App Store</a>
+  </div>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="support.html">Support</a>
+  </footer>
+
+</body>
+</html>
